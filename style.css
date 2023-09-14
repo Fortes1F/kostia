@@ -1,0 +1,83 @@
+#youi{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#red{
+    background-color: red;
+    color: red;
+
+}
+#red:hover{
+    background-color: white;
+    color:black;
+}
+.marquee-text{
+    margin: 30px auto;
+    border: 1px solid #000;
+    max-width: 80%;
+    overflow: hidden;
+}
+.marquee-text div{
+   width: 100%;
+   animation: marquee-text 8s linear infinite;
+}
+
+@keyframes marquee-text{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#rter{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+  
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+   
+header .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    transition: .5s;
+}
+header .logo:hover{
+    transform: scale(1.2);
+}
+header nav ul li{
+    position: relative;
+    float: left;
+}
+header nav ul li a{
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+header nav ul li a:hover{
+    background: white;
+    color: red;
+}
+#yu{
+    margin-top: 200px;
+}
